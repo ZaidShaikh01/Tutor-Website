@@ -49,6 +49,10 @@ li{
     font-size: 1.3rem;
     color: var(--dark-color);
 }
+.section-lists{
+    background-color: white;
+    padding: 2rem;
+}
 /* Containers */
 .container{
 max-width: 1200px;
@@ -138,7 +142,7 @@ padding: 0 2rem;
     color: white;
     overflow-x: hidden;
     position: relative;
-    border-bottom: 1px solid #333333ac;
+    border-bottom: 1px solid #f1f4f6;
 }
 .hero .hero-flex{
     display: flex;
@@ -218,6 +222,24 @@ padding: 0 2rem;
     font-size: 1.25rem;
     font-weight: 700;
     margin: 1rem 0;
+}
+/* Summary */
+.summary{
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    padding: 4rem 2rem 5rem;
+}
+.summary .list-header{
+    background-color: var(--primary-color);
+    color: white;
+    padding: 0.5rem 1rem;
+    font-size: 1.2rem;
+    font-weight: 700;
+    margin: 1rem 0;
+}
+.summary .list-item{
+    padding: 1.4rem 0;
+    border-bottom: 1px solid #f1f4f6;
 }
 /* Button */
 .btn {

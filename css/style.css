@@ -57,6 +57,10 @@ padding: 0 2rem;
 .navbar a{
     color: #fff;
 }
+.navbar a:hover, .navbar .current{
+    color: var(--secondary-color);
+}
+
 .navbar ul.main-menu-list{
     display: flex;
     justify-content: center;
@@ -64,10 +68,49 @@ padding: 0 2rem;
     gap: 2rem;
     font-weight: 600;
 }
+/* Mobile Navbar */
+.navbar .mobile-menu{
+    display: none;
+}
+.navbar .mobile-menu-toggle{
+    color: white;
+    padding: 10px;
+}
+.navbar i{
+    font-size: 1.5rem;
+}
+.navbar .mobile-menu-items{
+    position: absolute;
+    top: 100%;
+    left:0;
+    width: 100%;
+    background-color: rgba(0, 0, 0, 0.8);
+    opacity: 0.95;
+    padding: 3rem 2rem;
+    text-align: center;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transform: translateX(100%);
+    transition: transform 0.3s ease;
+}
+
+.navbar .mobile-menu-list{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+    font-size: 1.2rem;
+}
+.navbar .mobile-menu-items.active{
+    transform: translate(0);
+}
+.navbar.navbar-scroll{
+    background-color: rgba(235, 77, 85, 0.8);
+    backdrop-filter: blur(10px);
+}
+/* Hero */
 .hero{
     background: #000 url(
         ../images/header-background.jpg
-    ) center no-repeat;
+    ) center/cover no-repeat;
     padding: 11.5rem 2rem 8rem;
     color: white;
     overflow-x: hidden;
@@ -118,6 +161,9 @@ padding: 0 2rem;
 }
 
 @media(max-width:992px){
+    .main-menu-items{
+            display: none;
+        }
     .hero{
         text-align: center;
     }
@@ -132,6 +178,9 @@ padding: 0 2rem;
     }
 }
 @media (max-width: 1200px) {
+    .main-menu-items{
+            display: none;
+        }
     .hero .hero-flex {
         gap: 2rem;
     }
@@ -140,20 +189,41 @@ padding: 0 2rem;
     }
     .hero img{
         max-width: 500px;
-        margin-right: -100px;
+        margin-right: 0px;
     }
 }
 @media(max-width:576px){
+    .main-menu-items{
+            display: none;
+        }
     
     .hero{
         padding-right: 0.2rem;
         padding-left:0.2rem;
     }
     .hero h1{
-        font-size: 3rem;
+        font-size: 2.5rem;
     }
     .hero img{
         max-width: 350px;
         
+    }
+}
+@media(max-width:768px) {
+    .main-menu-items{
+        display: none;
+    }
+    .navbar .mobile-menu{
+        display: block;
+    }
+    .hero{
+        padding-right: 0.2rem;
+        padding-left:0.2rem;
+    }
+    .hero h1{
+        font-size: 2.5rem;
+    }
+    .hero img{
+        max-width: 350px;
     }
 }

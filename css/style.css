@@ -45,6 +45,10 @@ li{
     background-color: var(--primary-color);
     margin: 0 auto 2rem;
 }
+.section-header p{
+    font-size: 1.3rem;
+    color: var(--dark-color);
+}
 /* Containers */
 .container{
 max-width: 1200px;
@@ -169,6 +173,9 @@ padding: 0 2rem;
 }
 
 /* Learn Section */
+.learn{
+    margin-bottom: 4rem;
+}
 .topics{
     display: grid;
     grid-template-columns: repeat(4,1fr);
@@ -185,6 +192,32 @@ padding: 0 2rem;
     font-size: 1rem;
     font-weight: 700;
     margin: 0.5rem 0;
+}
+/* Chapter section */
+.chapter-cards{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    padding: 1rem 0 4rem;
+    gap: 2rem;
+}
+.card{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    padding: 2rem 1.75rem;
+    background: white;
+    box-shadow: 0 4px 12px 0 rgba(0, 0, 0, 0.3);
+}
+.chapter-cards img{
+    width: 130px;
+    margin-top: 1rem;
+}
+.chapter-cards h3{
+    font-size: 1.25rem;
+    font-weight: 700;
+    margin: 1rem 0;
 }
 /* Button */
 .btn {
@@ -240,6 +273,9 @@ padding: 0 2rem;
     .topics{
         grid-template-columns: repeat(2,1fr);
     }
+    .chapter-cards{
+        grid-template-columns: 1fr;
+    }
 }
 @media(max-width:768px) {
     .main-menu-items{
@@ -278,7 +314,7 @@ padding: 0 2rem;
         max-width: 350px;
         
     }
-    .topics{
+    .topics,.chapter-cards{
         grid-template-columns: 1fr;
     }
 }

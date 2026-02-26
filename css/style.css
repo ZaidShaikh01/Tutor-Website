@@ -273,6 +273,21 @@ padding: 0 2rem;
     margin-right: 0.5rem;
     color: var(--secondary-color);
 }
+/* Key Takeaways */
+.takeaways-cards{
+display: grid;
+grid-template-columns: repeat(3,1fr);
+gap: 2rem;
+padding: 1.5rem 0;
+}
+.takeaways-cards .card{
+    flex-direction: row;
+    text-align: left;
+}
+.takeaways-cards .card i{
+    margin-right: 1rem;
+    color: var(--primary-color);
+}
 /* Button */
 .btn {
     display: inline-block;
@@ -327,7 +342,7 @@ padding: 0 2rem;
     .topics{
         grid-template-columns: repeat(2,1fr);
     }
-    .chapter-cards{
+    .chapter-cards,.takeaways-cards{
         grid-template-columns: 1fr;
     }
 }

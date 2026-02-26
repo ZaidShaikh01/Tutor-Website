@@ -288,6 +288,28 @@ padding: 1.5rem 0;
     margin-right: 1rem;
     color: var(--primary-color);
 }
+/* Details section */
+.details .details-flex{
+    display: flex;
+    gap: 4rem;
+    align-items: center;
+    justify-content: center;
+}
+.details img{
+    width: 100%;
+    max-width: 500px;
+}
+.details h2{
+    font-size: 2rem;
+    font-weight: 700;
+    margin-bottom: 0.5rem;
+}
+.details .heading-border{
+    margin: 0;
+}
+.details p{
+    margin: 1rem 0 2rem;
+}
 /* Button */
 .btn {
     display: inline-block;
@@ -344,6 +366,10 @@ padding: 1.5rem 0;
     }
     .chapter-cards,.takeaways-cards{
         grid-template-columns: 1fr;
+    }
+    .details-flex{
+        flex-direction: column;
+        gap: 2rem;
     }
 }
 @media(max-width:768px) {

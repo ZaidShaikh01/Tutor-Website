@@ -53,6 +53,9 @@ li{
     background-color: white;
     padding: 2rem;
 }
+.section{
+    margin-bottom: 3rem;
+}
 /* Containers */
 .container{
 max-width: 1200px;
@@ -309,6 +312,17 @@ padding: 1.5rem 0;
 }
 .details p{
     margin: 1rem 0 2rem;
+}
+/* Author information */
+.details ul{
+    margin-bottom: 2rem;
+}
+.detials ul li{
+line-height: 2;
+}
+.details ul li i{
+    color: var(--primary-color);
+    margin-right: 0.5rem;
 }
 /* Button */
 .btn {

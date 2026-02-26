@@ -420,6 +420,24 @@ line-height: 2;
 .social a, .footer a{
     color: white;
 }
+/* Footer */
+.footer{
+    background-color: var(--dark-color);
+    color: white;
+    border-top: 1px solid #384653;
+    padding: 0.5rem 2rem;
+}
+.footer-flex{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.footer ul{
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+    margin: 2rem 0;
+}
 /* Button */
 .btn {
     display: inline-block;
@@ -520,6 +538,13 @@ line-height: 2;
     }
     .social i{
         font-size: 2rem;
+    }
+    .footer{
+        padding: 0.5rem 1rem;
+    }
+    .footer-flex{
+        flex-direction: column;
+        text-align: center;
     }
 }
 @media(max-width:576px){
